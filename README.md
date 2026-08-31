@@ -1,7 +1,7 @@
 # Mouhijärven kirkko ICS
 
-Sastamalan seurakunnan Mouhijärven tapahtumat ICS-kalenterina.   
-[GitHub Action](.github/workflows/update-ics.yml) päivittää `feed.ics`-tiedoston tunneittain, jotta sen URL:n voi lisätä esim. Google kalenteriin.
+Sastamalan seurakunnan Mouhijärven tapahtumat ICS-kalenterina, virallisesta RSS-syötteestä muunnettuna.   
+[GitHub Action](.github/workflows/update-ics.yml) päivittää `feed.ics`-tiedoston tunneittain, joten sen [URL:n](https://www.jukkapajarinen.com/MouhijarvenKirkkoICS/feed.ics) voi lisätä esim. Google kalenteriin.
 
 ## Author
 
