@@ -8,15 +8,8 @@
   <body>
     <h1>Mouhijärven kirkko – tapahtumat</h1>
     <ul>
-      <li><a href="https://www.sastamalanseurakunta.fi/o/events-portlet/feed/parish/?parishId=11670545">Alkuperäinen RSS-syöte</a></li>
-      <li><a href="feed.ics">RSS syötteestä muunnettu ICS-syöte</a></li>
+      <li><a href="https://www.sastamalanseurakunta.fi/o/events-portlet/feed/parish/?parishId=11670545">Alkuperäinen RSS-syöte</a> - kopioi tämä URL RSS-lukijaohjelmaasi.</li>
+      <li><a href="feed.ics">RSS syötteestä muunnettu ICS-syöte</a> - kopioi tämä URL esim. Google Kalenteriin.</li>
     </ul>
-    <p>Lisää Google kalenteriin tai vastaavaan ICS kalenteriin URL: <a id="feed-url" href="feed.ics">feed.ics</a></p>
-    <script>
-      const feedUrl = new URL("feed.ics", window.location.href).href;
-      const link = document.getElementById("feed-url");
-      link.href = feedUrl;
-      link.textContent = feedUrl;
-    </script>
   </body>
 </html>
