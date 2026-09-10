@@ -7,29 +7,6 @@ const DEFAULT_DURATION_MINUTES = 60;
 const CALENDAR_NAME = 'Mouhijärven kirkko';
 const EVENT_TIMEZONE = 'Europe/Helsinki';
 
-// Embedding the DST rules lets calendar apps (Google Calendar in particular) render
-// DTSTART;TZID=Europe/Helsinki times in the correct local time instead of falling back
-// to UTC+0, which is what happens with bare "Z" UTC timestamps on subscribed feeds.
-const VTIMEZONE_LINES = [
-  'BEGIN:VTIMEZONE',
-  `TZID:${EVENT_TIMEZONE}`,
-  'BEGIN:DAYLIGHT',
-  'TZOFFSETFROM:+0200',
-  'TZOFFSETTO:+0300',
-  'TZNAME:EEST',
-  'DTSTART:19700329T030000',
-  'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU',
-  'END:DAYLIGHT',
-  'BEGIN:STANDARD',
-  'TZOFFSETFROM:+0300',
-  'TZOFFSETTO:+0200',
-  'TZNAME:EET',
-  'DTSTART:19701025T040000',
-  'RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU',
-  'END:STANDARD',
-  'END:VTIMEZONE',
-];
-
 function decodeEntities(text) {
   return text
     .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
@@ -80,21 +57,6 @@ function toUtcStamp(date) {
   );
 }
 
-function toZonedStamp(date, timeZone) {
-  const parts = new Intl.DateTimeFormat('en-US', {
-    timeZone,
-    year: 'numeric',
-    month: '2-digit',
-    day: '2-digit',
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hourCycle: 'h23',
-  }).formatToParts(date);
-  const get = (type) => parts.find((part) => part.type === type).value;
-  return `${get('year')}${get('month')}${get('day')}T${get('hour')}${get('minute')}${get('second')}`;
-}
-
 function escapeIcsText(text) {
   return text.replace(/\\/g, '\\\\').replace(/,/g, '\\,').replace(/;/g, '\\;').replace(/\n/g, '\\n');
 }
@@ -137,7 +99,7 @@ function toEvent(entry) {
     `UID:${uid}`,
     `SUMMARY:${escapeIcsText(title)}`,
     `DTSTAMP:${toUtcStamp(new Date())}`,
-    `DTSTART;TZID=${EVENT_TIMEZONE}:${toZonedStamp(start, EVENT_TIMEZONE)}`,
+    `DTSTART:${toUtcStamp(start)}`,
     `DESCRIPTION:${escapeIcsText(description)}`,
   ];
   if (url) {
@@ -172,7 +134,6 @@ async function main() {
     `X-WR-CALNAME:${CALENDAR_NAME}`,
     `X-WR-TIMEZONE:${EVENT_TIMEZONE}`,
     'X-PUBLISHED-TTL:PT1H',
-    ...VTIMEZONE_LINES,
     ...entries.flatMap(toEvent),
     'END:VCALENDAR',
   ];
