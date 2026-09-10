@@ -39,6 +39,16 @@ function extractEntries(xml) {
   });
 }
 
+function parseFeedDate(raw) {
+  // The source feed reports the event's real Europe/Helsinki wall-clock time but wrongly
+  // tacks on that same offset as a suffix (e.g. +0300) as if it still needed converting.
+  // Honoring that offset shifts every event 2-3 hours earlier than reality, so instead
+  // treat the raw digits as the UTC instant directly (as if suffixed with Z) - calendar
+  // apps then correctly re-add the real Finnish offset when displaying local time.
+  const utcLike = raw.replace(/([+-]\d{2}:?\d{2}|Z)$/, 'Z');
+  return new Date(utcLike);
+}
+
 function toUtcStamp(date) {
   const pad = (n) => String(n).padStart(2, '0');
   return (
@@ -77,7 +87,7 @@ function toEvent(entry) {
   const title = entry.title;
   const url = entry.url;
   const description = [entry.summary, url].filter(Boolean).join('\n\n');
-  const start = new Date(entry.published);
+  const start = parseFeedDate(entry.published);
   if (Number.isNaN(start.getTime())) {
     throw new Error(`Invalid date: ${entry.published}`);
   }
