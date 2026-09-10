@@ -4,13 +4,31 @@ CALSCALE:GREGORIAN
 PRODID:MouhijarvenKirkkoICS
 METHOD:PUBLISH
 X-WR-CALNAME:Mouhijärven kirkko
+X-WR-TIMEZONE:Europe/Helsinki
 X-PUBLISHED-TTL:PT1H
+BEGIN:VTIMEZONE
+TZID:Europe/Helsinki
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0300
+TZNAME:EEST
+DTSTART:19700329T030000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0200
+TZNAME:EET
+DTSTART:19701025T040000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMTMvbW91aGlqYXJ2ZW4tbWVzc3U@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven messu
-DTSTAMP:20260910T221323Z
-DTSTART:20260913T070000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260913T100000
 DESCRIPTION:Mouhijärven messu\n\nhttp://www.sastamalanseurakunta.fi/tapaht
  umat/2026-09-13/mouhijarven-messu
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-09-13/mouhijarven-me
@@ -21,8 +39,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMTQvbW91aGlqYXJ2ZW4tdmlycmVudmllamF0@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven VirrenViejät
-DTSTAMP:20260910T221323Z
-DTSTART:20260914T100000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260914T130000
 DESCRIPTION:Mouhijärven VirrenViejät tulevat pyynnöstä laulamaan virsi
  ä koteihin ja laitoksiin. Pyynnöt numerosta 0503149048\n\nhttp://www.sas
  tamalanseurakunta.fi/tapahtumat/2026-09-14/mouhijarven-virrenviejat
@@ -34,8 +52,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMTQvbmFpc3RlbnBpaXJp@mouhijarvenkirkkoics
 SUMMARY:Naistenpiiri
-DTSTAMP:20260910T221323Z
-DTSTART:20260914T150000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260914T180000
 DESCRIPTION:Keskustelupiiri naisille teemalla "Eväitä elämään". Iltate
  e\, keskustelua\, iltahartaus. Kopalainen Tarja\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-09-14/naistenpiiri
@@ -46,8 +64,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMTUvZGlha29uaWFrYWh2aWxh@mouhijarvenkirkkoics
 SUMMARY:Diakoniakahvila
-DTSTAMP:20260910T221323Z
-DTSTART:20260915T063000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260915T093000
 DESCRIPTION:Diakoniakahvila Torikeskuksen Arkissa (Torikatu 1\, 2. krs.\, k
  äynti pysäköintitasanteelta Onkiniemenkadun päädyn läheltä). Kahvia
  \, leipää\, puuroa. Aamiaismaksu 1 €.\n\nhttp://www.sastamalanseurakun
@@ -60,8 +78,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMTYvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20260916T063000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260916T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-0
@@ -74,8 +92,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMjAvbWFqYXRhbG9uLWlsdGFwYWl2YQ@mouhijarvenkirkkoics
 SUMMARY:Majatalon iltapäivä
-DTSTAMP:20260910T221323Z
-DTSTART:20260920T120000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260920T150000
 DESCRIPTION:Vietämme Kiikassa Majatalon iltapäivää. Lauluyhtye Pisara m
  usisoi tuttuun tapaan\, ja puhujavieraana on Marjo Lehikoinen. Tule mukaan
  ! Väliajalla teetä ja turinoita. Kolehti Suomen Pipliaseuralle Lukutaito
@@ -89,8 +107,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMjMvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20260923T063000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260923T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-0
@@ -103,8 +121,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMjMvbGF1bHV5aHR5ZS1waXNhcmFuLWtvbnNlcnR0aQ@mouhijarvenkirkkoics
 SUMMARY:Lauluyhtye Pisaran konsertti
-DTSTAMP:20260910T221323Z
-DTSTART:20260923T150000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260923T180000
 DESCRIPTION:Tervetuloa konserttiin! Vapaa pääsy.\n\nhttp://www.sastamalan
  seurakunta.fi/tapahtumat/2026-09-23/lauluyhtye-pisaran-konsertti
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-09-23/lauluyhtye-pis
@@ -115,8 +133,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMjcvbW91aGlqYXJ2ZW4tbWVzc3U@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven messu
-DTSTAMP:20260910T221323Z
-DTSTART:20260927T070000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260927T100000
 DESCRIPTION:Sadonkorjuun kiitosmessu\, piispanmessu\, liturgi ja saarna pii
  spa Matti Repo\, avustava pappi Saija Kainulainen. Musiikissa Mouhijärven
   kirkkokuoro sekä Tyrvään kirkkokuorosta ja Sastamala Gospelista koostu
@@ -131,8 +149,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMjgvc3VvZGVubmllbWVuLXBlbGktaWx0YQ@mouhijarvenkirkkoics
 SUMMARY:Suodenniemen peli-ilta
-DTSTAMP:20260910T221323Z
-DTSTART:20260928T130000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260928T160000
 DESCRIPTION:Suodenniemen peli-ilta koululaisille\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-09-28/suodenniemen-peli-ilta
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-09-28/suodenniemen-p
@@ -143,8 +161,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMjgvbmFpc3RlbnBpaXJp@mouhijarvenkirkkoics
 SUMMARY:Naistenpiiri
-DTSTAMP:20260910T221323Z
-DTSTART:20260928T150000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260928T180000
 DESCRIPTION:Keskustelupiiri naisille teemalla "Eväitä elämään". Iltate
  e\, keskustelua\, iltahartaus. Kopalainen Tarja\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-09-28/naistenpiiri
@@ -155,8 +173,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMjkvZGlha29uaWFrYWh2aWxh@mouhijarvenkirkkoics
 SUMMARY:Diakoniakahvila
-DTSTAMP:20260910T221323Z
-DTSTART:20260929T063000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260929T093000
 DESCRIPTION:Diakoniakahvila Torikeskuksen Arkissa (Torikatu 1\, 2. krs.\, k
  äynti pysäköintitasanteelta Onkiniemenkadun päädyn läheltä). Kahvia
  \, leipää\, puuroa. Aamiaismaksu 1 €.\n\nhttp://www.sastamalanseurakun
@@ -169,8 +187,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMDk
  tMzAvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20260930T063000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20260930T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-0
@@ -183,8 +201,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMDcvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261007T063000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261007T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-1
@@ -197,8 +215,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMDgvdHVvbWFzbWVzc3VuLXN1dW5uaXR0ZWx1a29rb3Vz@mouhijarvenkirkkoics
 SUMMARY:Tuomasmessun suunnittelukokous
-DTSTAMP:20260910T221323Z
-DTSTART:20261008T150000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261008T180000
 DESCRIPTION:Tuomasmessun suunnittelukokous\, joka on kaikille avoin. Tule y
  hdessä tekemään syksyn Tuomasmessua\, tervetuloa! Osoite: Mouhijärven 
  kirkko\, Kinkerikuja 3\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/20
@@ -211,8 +229,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMTEvbW91aGlqYXJ2ZW4tbWVzc3U@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven messu
-DTSTAMP:20260910T221323Z
-DTSTART:20261011T070000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261011T100000
 DESCRIPTION:Mouhijärven messu\n\nhttp://www.sastamalanseurakunta.fi/tapaht
  umat/2026-10-11/mouhijarven-messu
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-10-11/mouhijarven-me
@@ -223,8 +241,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMTIvbW91aGlqYXJ2ZW4tdmlycmVudmllamF0@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven VirrenViejät
-DTSTAMP:20260910T221323Z
-DTSTART:20261012T100000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261012T130000
 DESCRIPTION:Mouhijärven VirrenViejät tulevat pyynnöstä laulamaan virsi
  ä koteihin ja laitoksiin. Pyynnöt numerosta 0503149048\n\nhttp://www.sas
  tamalanseurakunta.fi/tapahtumat/2026-10-12/mouhijarven-virrenviejat
@@ -236,8 +254,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMTIvbmFpc3RlbnBpaXJp@mouhijarvenkirkkoics
 SUMMARY:Naistenpiiri
-DTSTAMP:20260910T221323Z
-DTSTART:20261012T150000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261012T180000
 DESCRIPTION:Keskustelupiiri naisille teemalla "Eväitä elämään". Iltate
  e\, keskustelua\, iltahartaus. Kopalainen Tarja\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-10-12/naistenpiiri
@@ -248,8 +266,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMTMvZGlha29uaWFrYWh2aWxh@mouhijarvenkirkkoics
 SUMMARY:Diakoniakahvila
-DTSTAMP:20260910T221323Z
-DTSTART:20261013T063000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261013T093000
 DESCRIPTION:Diakoniakahvila Torikeskuksen Arkissa (Torikatu 1\, 2. krs.\, k
  äynti pysäköintitasanteelta Onkiniemenkadun päädyn läheltä). Kahvia
  \, leipää\, puuroa. Aamiaismaksu 1 €.\n\nhttp://www.sastamalanseurakun
@@ -262,8 +280,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMTUvYXJraWxvdW5hcy1qYS12YW5oZW1tYW4tdmFlbi1rZXJobw@mouhijarvenkirkkoics
 SUMMARY:Arkilounas ja vanhemman väen kerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261015T090000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261015T120000
 DESCRIPTION:Arkilounas ja vanhemman väen kerho. Ruokailu\, hartaus sekä m
  uuta ohjelmaa. Lopuksi kahvit. Vapaaehtoinen ruokamaksu. Saija Kainulainen
  \, Mirva Tuovio\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-10-1
@@ -276,8 +294,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMjEvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261021T063000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261021T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-1
@@ -290,8 +308,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMjUvdHVvbWFzbWVzc3U@mouhijarvenkirkkoics
 SUMMARY:Tuomasmessu
-DTSTAMP:20260910T221323Z
-DTSTART:20261025T150000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261025T170000
 DESCRIPTION:Tuomasmessu. Musiikissa Mouhijärven kirkkokuoro ja Tuomaslaulu
  ryhmä.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-10-25/tuomas
  messu
@@ -302,8 +320,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMjYvc3VvZGVubmllbWVuLXBlbGktaWx0YQ@mouhijarvenkirkkoics
 SUMMARY:Suodenniemen peli-ilta
-DTSTAMP:20260910T221323Z
-DTSTART:20261026T140000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261026T160000
 DESCRIPTION:Suodenniemen peli-ilta koululaisille\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-10-26/suodenniemen-peli-ilta
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-10-26/suodenniemen-p
@@ -314,8 +332,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMjYvbmFpc3RlbnBpaXJp@mouhijarvenkirkkoics
 SUMMARY:Naistenpiiri
-DTSTAMP:20260910T221323Z
-DTSTART:20261026T160000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261026T180000
 DESCRIPTION:Keskustelupiiri naisille teemalla "Eväitä elämään". Iltate
  e\, keskustelua\, iltahartaus. Kopalainen Tarja\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-10-26/naistenpiiri
@@ -326,8 +344,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMjcvZGlha29uaWFrYWh2aWxh@mouhijarvenkirkkoics
 SUMMARY:Diakoniakahvila
-DTSTAMP:20260910T221323Z
-DTSTART:20261027T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261027T093000
 DESCRIPTION:Diakoniakahvila Torikeskuksen Arkissa (Torikatu 1\, 2. krs.\, k
  äynti pysäköintitasanteelta Onkiniemenkadun päädyn läheltä). Kahvia
  \, leipää\, puuroa. Aamiaismaksu 1 €.\n\nhttp://www.sastamalanseurakun
@@ -340,8 +358,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTA
  tMjgvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261028T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261028T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-1
@@ -354,8 +372,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMDQvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261104T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261104T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-1
@@ -368,8 +386,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMDkvbW91aGlqYXJ2ZW4tdmlycmVudmllamF0@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven VirrenViejät
-DTSTAMP:20260910T221323Z
-DTSTART:20261109T110000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261109T130000
 DESCRIPTION:Mouhijärven VirrenViejät tulevat pyynnöstä laulamaan virsi
  ä koteihin ja laitoksiin. Pyynnöt numerosta 0503149048\n\nhttp://www.sas
  tamalanseurakunta.fi/tapahtumat/2026-11-09/mouhijarven-virrenviejat
@@ -381,8 +399,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMDkvbmFpc3RlbnBpaXJp@mouhijarvenkirkkoics
 SUMMARY:Naistenpiiri
-DTSTAMP:20260910T221323Z
-DTSTART:20261109T160000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261109T180000
 DESCRIPTION:Keskustelupiiri naisille teemalla "Eväitä elämään". Iltate
  e\, keskustelua\, iltahartaus. Kopalainen Tarja\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-11-09/naistenpiiri
@@ -393,8 +411,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMTAvZGlha29uaWFrYWh2aWxh@mouhijarvenkirkkoics
 SUMMARY:Diakoniakahvila
-DTSTAMP:20260910T221323Z
-DTSTART:20261110T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261110T093000
 DESCRIPTION:Diakoniakahvila Torikeskuksen Arkissa (Torikatu 1\, 2. krs.\, k
  äynti pysäköintitasanteelta Onkiniemenkadun päädyn läheltä). Kahvia
  \, leipää\, puuroa. Aamiaismaksu 1 €.\n\nhttp://www.sastamalanseurakun
@@ -407,8 +425,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMTEvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261111T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261111T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-1
@@ -421,8 +439,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMTIvYXJraWxvdW5hcy1qYS12YW5oZW1tYW4tdmFlbi1rZXJobw@mouhijarvenkirkkoics
 SUMMARY:Arkilounas ja vanhemman väen kerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261112T100000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261112T120000
 DESCRIPTION:Arkilounas ja vanhemman väen kerho. Ruokailu\, hartaus sekä m
  uuta ohjelmaa. Lopuksi kahvit. Vapaaehtoinen ruokamaksu. Saija Kainulainen
  \, Mirva Tuovio\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-11-1
@@ -435,8 +453,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMTMvbGFoaW1tYWlzdGVuLXR5b25vaGphdXM@mouhijarvenkirkkoics
 SUMMARY:Lähimmäisten työnohjaus
-DTSTAMP:20260910T221323Z
-DTSTART:20261113T110000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261113T130000
 DESCRIPTION:Lähimmäisten työnohjausryhmä\n\nhttp://www.sastamalanseurak
  unta.fi/tapahtumat/2026-11-13/lahimmaisten-tyonohjaus
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-11-13/lahimmaisten-t
@@ -447,8 +465,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMTMvYWl0aWVuLXlvcmV0a2k@mouhijarvenkirkkoics
 SUMMARY:Äitien yöretki
-DTSTAMP:20260910T221323Z
-DTSTART:20261113T140000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261113T160000
 DESCRIPTION:Äitien yöretki Houhajärven leirimajalla.\n\nhttp://www.sasta
  malanseurakunta.fi/tapahtumat/2026-11-13/aitien-yoretki
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-11-13/aitien-yoretki
@@ -458,8 +476,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMTUvbW91aGlqYXJ2ZW4tbWVzc3U@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven messu
-DTSTAMP:20260910T221323Z
-DTSTART:20261115T110000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261115T130000
 DESCRIPTION:Mouhijärven messu\n\nhttp://www.sastamalanseurakunta.fi/tapaht
  umat/2026-11-15/mouhijarven-messu
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-11-15/mouhijarven-me
@@ -470,8 +488,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMTUvbWFqYXRhbG9uLWlsdGFwYWl2YQ@mouhijarvenkirkkoics
 SUMMARY:Majatalon iltapäivä
-DTSTAMP:20260910T221323Z
-DTSTART:20261115T130000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261115T150000
 DESCRIPTION:Majatalon iltapäivä\, Puhujavieras Marjo Lehikoinen\, Jouni S
  alko\, Lauluyhtye Pisara\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/
  2026-11-15/majatalon-iltapaiva
@@ -483,8 +501,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMTgvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261118T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261118T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-1
@@ -497,8 +515,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMjMvbmFpc3RlbnBpaXJp@mouhijarvenkirkkoics
 SUMMARY:Naistenpiiri
-DTSTAMP:20260910T221323Z
-DTSTART:20261123T160000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261123T180000
 DESCRIPTION:Keskustelupiiri naisille teemalla "Eväitä elämään". Iltate
  e\, keskustelua\, iltahartaus. Kopalainen Tarja\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-11-23/naistenpiiri
@@ -509,8 +527,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMjQvZGlha29uaWFrYWh2aWxh@mouhijarvenkirkkoics
 SUMMARY:Diakoniakahvila
-DTSTAMP:20260910T221323Z
-DTSTART:20261124T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261124T093000
 DESCRIPTION:Diakoniakahvila Torikeskuksen Arkissa (Torikatu 1\, 2. krs.\, k
  äynti pysäköintitasanteelta Onkiniemenkadun päädyn läheltä). Kahvia
  \, leipää\, puuroa. Aamiaismaksu 1 €.\n\nhttp://www.sastamalanseurakun
@@ -523,8 +541,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMjUvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261125T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261125T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-1
@@ -537,8 +555,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMjkvbW91aGlqYXJ2ZW4tbWVzc3U@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven messu
-DTSTAMP:20260910T221323Z
-DTSTART:20261129T110000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261129T130000
 DESCRIPTION:Mouhijärven messu\n\nhttp://www.sastamalanseurakunta.fi/tapaht
  umat/2026-11-29/mouhijarven-messu
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-11-29/mouhijarven-me
@@ -549,8 +567,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTE
  tMzAvc3VvZGVubmllbWVuLXBlbGktaWx0YQ@mouhijarvenkirkkoics
 SUMMARY:Suodenniemen peli-ilta
-DTSTAMP:20260910T221323Z
-DTSTART:20261130T140000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261130T160000
 DESCRIPTION:Suodenniemen peli-ilta koululaisille\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-11-30/suodenniemen-peli-ilta
 URL:http://www.sastamalanseurakunta.fi/tapahtumat/2026-11-30/suodenniemen-p
@@ -561,8 +579,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTI
  tMDIvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261202T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261202T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-1
@@ -575,8 +593,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTI
  tMDYvaXRzZW5haXN5eXNwYWl2YW4tanVtYWxhbnBhbHZlbHVz@mouhijarvenkirkkoics
 SUMMARY:Itsenäisyyspäivän jumalanpalvelus
-DTSTAMP:20260910T221323Z
-DTSTART:20261206T110000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261206T130000
 DESCRIPTION:Itsenäisyyspäivän jumalanpalvelus. Mouhijärven kirkkokuoro.
  \n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-12-06/itsenaisyyspa
  ivan-jumalanpalvelus
@@ -588,8 +606,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTI
  tMDcvbmFpc3RlbnBpaXJp@mouhijarvenkirkkoics
 SUMMARY:Naistenpiiri
-DTSTAMP:20260910T221323Z
-DTSTART:20261207T160000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261207T180000
 DESCRIPTION:Keskustelupiiri naisille teemalla "Eväitä elämään". Iltate
  e\, keskustelua\, iltahartaus. Kopalainen Tarja\n\nhttp://www.sastamalanse
  urakunta.fi/tapahtumat/2026-12-07/naistenpiiri
@@ -600,8 +618,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTI
  tMDgvZGlha29uaWFrYWh2aWxh@mouhijarvenkirkkoics
 SUMMARY:Diakoniakahvila
-DTSTAMP:20260910T221323Z
-DTSTART:20261208T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261208T093000
 DESCRIPTION:Diakoniakahvila Torikeskuksen Arkissa (Torikatu 1\, 2. krs.\, k
  äynti pysäköintitasanteelta Onkiniemenkadun päädyn läheltä). Kahvia
  \, leipää\, puuroa. Aamiaismaksu 1 €.\n\nhttp://www.sastamalanseurakun
@@ -614,8 +632,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTI
  tMDkvbW91aGlqYXJ2ZW4tcGVyaGVrZXJobw@mouhijarvenkirkkoics
 SUMMARY:Mouhijärven perhekerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261209T073000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261209T093000
 DESCRIPTION:Tervetuloa perhekerhoon laulamaan\, leikkimään ja viettämä
  än mukava hetki yhdessä. Tarjoilumaksu 1e/hlö\, maksuvälineenä kätei
  nen tai MobilePay.\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-1
@@ -628,8 +646,8 @@ BEGIN:VEVENT
 UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTI
  tMTAvYXJraWxvdW5hcy1qYS12YW5oZW1tYW4tdmFlbi1rZXJobw@mouhijarvenkirkkoics
 SUMMARY:Arkilounas ja vanhemman väen kerho
-DTSTAMP:20260910T221323Z
-DTSTART:20261210T100000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261210T120000
 DESCRIPTION:Arkilounas ja vanhemman väen kerho. Ruokailu\, hartaus sekä m
  uuta ohjelmaa. Lopuksi kahvit. Vapaaehtoinen ruokamaksu. Saija Kainulainen
  \, Mirva Tuovio\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-12-1
@@ -643,8 +661,8 @@ UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTI
  tMTMvcGVyaGVpZGVuLWthdW5laW1tYXQtam91bHVsYXVsdXQtdHlydmFhbi1raXJrb3NzYQ@mo
  uhijarvenkirkkoics
 SUMMARY:Perheiden kauneimmat joululaulut Tyrvään kirkossa
-DTSTAMP:20260910T221323Z
-DTSTART:20261213T120000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261213T140000
 DESCRIPTION:Perheiden kauneimmat joululaulut Tyrvään kirkossa\, Aija Aur
  én\, Anu Mattila\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-12
  -13/perheiden-kauneimmat-joululaulut-tyrvaan-kirkossa
@@ -657,8 +675,8 @@ UID:aHR0cDovL3d3dy5zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWF0LzIwMjYtMTI
  tMTMva2F1bmVpbW1hdC1qb3VsdWxhdWx1dC10eXJ2YWFuLWtpcmtvc3Nh@mouhijarvenkirkk
  oics
 SUMMARY:Kauneimmat joululaulut Tyrvään kirkossa
-DTSTAMP:20260910T221323Z
-DTSTART:20261213T150000Z
+DTSTAMP:20260910T223436Z
+DTSTART;TZID=Europe/Helsinki:20261213T170000
 DESCRIPTION:Kauneimmat joululaulut Tyrvään kirkossa\, Vesa Aurén\, Anu M
  attila\n\nhttp://www.sastamalanseurakunta.fi/tapahtumat/2026-12-13/kauneim
  mat-joululaulut-tyrvaan-kirkossa

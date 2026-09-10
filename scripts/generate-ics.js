@@ -5,6 +5,30 @@ const FEED_URL = 'https://www.sastamalanseurakunta.fi/o/events-portlet/feed/pari
 const OUTPUT_PATH = fileURLToPath(new URL('../feed.ics', import.meta.url));
 const DEFAULT_DURATION_MINUTES = 60;
 const CALENDAR_NAME = 'Mouhijärven kirkko';
+const EVENT_TIMEZONE = 'Europe/Helsinki';
+
+// Embedding the DST rules lets calendar apps (Google Calendar in particular) render
+// DTSTART;TZID=Europe/Helsinki times in the correct local time instead of falling back
+// to UTC+0, which is what happens with bare "Z" UTC timestamps on subscribed feeds.
+const VTIMEZONE_LINES = [
+  'BEGIN:VTIMEZONE',
+  `TZID:${EVENT_TIMEZONE}`,
+  'BEGIN:DAYLIGHT',
+  'TZOFFSETFROM:+0200',
+  'TZOFFSETTO:+0300',
+  'TZNAME:EEST',
+  'DTSTART:19700329T030000',
+  'RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU',
+  'END:DAYLIGHT',
+  'BEGIN:STANDARD',
+  'TZOFFSETFROM:+0300',
+  'TZOFFSETTO:+0200',
+  'TZNAME:EET',
+  'DTSTART:19701025T040000',
+  'RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU',
+  'END:STANDARD',
+  'END:VTIMEZONE',
+];
 
 function decodeEntities(text) {
   return text
@@ -39,12 +63,36 @@ function extractEntries(xml) {
   });
 }
 
+function parseFeedDate(raw) {
+  // The source feed reports the event's real Europe/Helsinki wall-clock time but wrongly
+  // tacks on that same offset as a suffix (e.g. +0300) as if it still needed converting.
+  // Honoring that offset shifts every event 2-3 hours earlier than reality, so instead
+  // treat the raw digits as the UTC instant directly (as if suffixed with Z).
+  const utcLike = raw.replace(/([+-]\d{2}:?\d{2}|Z)$/, 'Z');
+  return new Date(utcLike);
+}
+
 function toUtcStamp(date) {
   const pad = (n) => String(n).padStart(2, '0');
   return (
     `${date.getUTCFullYear()}${pad(date.getUTCMonth() + 1)}${pad(date.getUTCDate())}` +
     `T${pad(date.getUTCHours())}${pad(date.getUTCMinutes())}${pad(date.getUTCSeconds())}Z`
   );
+}
+
+function toZonedStamp(date, timeZone) {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hourCycle: 'h23',
+  }).formatToParts(date);
+  const get = (type) => parts.find((part) => part.type === type).value;
+  return `${get('year')}${get('month')}${get('day')}T${get('hour')}${get('minute')}${get('second')}`;
 }
 
 function escapeIcsText(text) {
@@ -77,7 +125,7 @@ function toEvent(entry) {
   const title = entry.title;
   const url = entry.url;
   const description = [entry.summary, url].filter(Boolean).join('\n\n');
-  const start = new Date(entry.published);
+  const start = parseFeedDate(entry.published);
   if (Number.isNaN(start.getTime())) {
     throw new Error(`Invalid date: ${entry.published}`);
   }
@@ -89,7 +137,7 @@ function toEvent(entry) {
     `UID:${uid}`,
     `SUMMARY:${escapeIcsText(title)}`,
     `DTSTAMP:${toUtcStamp(new Date())}`,
-    `DTSTART:${toUtcStamp(start)}`,
+    `DTSTART;TZID=${EVENT_TIMEZONE}:${toZonedStamp(start, EVENT_TIMEZONE)}`,
     `DESCRIPTION:${escapeIcsText(description)}`,
   ];
   if (url) {
@@ -122,7 +170,9 @@ async function main() {
     'PRODID:MouhijarvenKirkkoICS',
     'METHOD:PUBLISH',
     `X-WR-CALNAME:${CALENDAR_NAME}`,
+    `X-WR-TIMEZONE:${EVENT_TIMEZONE}`,
     'X-PUBLISHED-TTL:PT1H',
+    ...VTIMEZONE_LINES,
     ...entries.flatMap(toEvent),
     'END:VCALENDAR',
   ];
