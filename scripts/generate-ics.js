@@ -3,7 +3,6 @@ import { fileURLToPath } from 'node:url';
 
 const FEED_URL = 'https://www.sastamalanseurakunta.fi/o/events-portlet/feed/parish/?parishId=11670545';
 const OUTPUT_PATH = fileURLToPath(new URL('../feed.ics', import.meta.url));
-const DEFAULT_DURATION_MINUTES = 60;
 const CALENDAR_NAME = 'Mouhijärven kirkko';
 const EVENT_TIMEZONE = 'Europe/Helsinki';
 
@@ -100,12 +99,13 @@ function toEvent(entry) {
     `SUMMARY:${escapeIcsText(title)}`,
     `DTSTAMP:${toUtcStamp(new Date())}`,
     `DTSTART:${toUtcStamp(start)}`,
+    `DTEND:${toUtcStamp(start)}`,
     `DESCRIPTION:${escapeIcsText(description)}`,
   ];
   if (url) {
     lines.push(`URL:${url}`);
   }
-  lines.push(`DURATION:PT${DEFAULT_DURATION_MINUTES}M`, 'END:VEVENT');
+  lines.push('END:VEVENT');
 
   return lines;
 }
