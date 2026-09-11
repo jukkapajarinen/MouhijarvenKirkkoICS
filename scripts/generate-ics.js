@@ -102,6 +102,7 @@ function toEvent(entry) {
     `SUMMARY:${escapeIcsText(title)}`,
     `DTSTAMP:${toUtcStamp(new Date())}`,
     `DTSTART:${toUtcStamp(start)}`,
+    `DTEND:${toUtcStamp(start)}`,
     `DESCRIPTION:${escapeIcsText(description)}`,
   ];
   if (url) {
