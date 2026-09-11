@@ -85,10 +85,9 @@ function foldLine(line) {
 function toEvent(entry) {
   const title = `✝️ ${entry.title}`;
   const url = entry.url;
-  const disclaimer = url
-    ? '⚠️ HUOM! Tämä on koneluettu tapahtuma. Tarkista vielä tiedot virallisesta linkistä! ⚠️'
-    : null;
-  const description = [entry.summary, disclaimer].filter(Boolean).join('\n\n');
+  const linkLine = url ? `URL: ${url}` : null;
+  const disclaimer = '⚠️ HUOM! Tämä on koneluettu tapahtuma. Tarkista vielä tiedot virallisesta linkistä! ⚠️';
+  const description = [entry.summary, linkLine, disclaimer].filter(Boolean).join('\n\n');
   const start = parseFeedDate(entry.published);
   if (Number.isNaN(start.getTime())) {
     throw new Error(`Invalid date: ${entry.published}`);
