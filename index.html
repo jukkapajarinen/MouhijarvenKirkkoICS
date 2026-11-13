@@ -4,12 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mouhijärven kirkko – tapahtumat</title>
+    <link rel="stylesheet" href="css/tailwind.min.css" />
   </head>
-  <body>
-    <h1>Mouhijärven kirkko – tapahtumat</h1>
-    <ul>
-      <li><a href="https://www.sastamalanseurakunta.fi/o/events-portlet/feed/parish/?parishId=11670545">Alkuperäinen RSS-syöte</a> - kopioi tämä URL RSS-lukijaohjelmaasi.</li>
-      <li><a href="feed.ics">RSS syötteestä muunnettu ICS-syöte</a> - kopioi tämä URL esim. Google Kalenteriin.</li>
-    </ul>
+  <body class="min-h-screen bg-gray-100 text-gray-800 antialiased">
+    <main class="max-w-2xl mx-auto px-4 py-12 sm:py-20">
+      <header class="text-center mb-10">
+        <div class="text-5xl mb-4" aria-hidden="true">⛪</div>
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">Mouhijärven kirkko</h1>
+        <p class="mt-3 text-lg text-gray-600">Mouhijärven jumalanpalvelukset kalenteriisi ICS-syötteenä.</p>
+      </header>
+
+      <section class="bg-white rounded-2xl shadow-lg p-6 sm:p-8">
+        <h2 class="text-xl font-semibold text-gray-900">📅 ICS-kalenterisyöte</h2>
+        <p class="mt-2 text-gray-600">
+          Kopioi tämä URL esim. Google Kalenteriin (<span class="italic">Muut kalenterit → Lisää URL-osoitteesta</span>).
+          Syöte päivittyy automaattisesti.
+        </p>
+        <div class="mt-4 flex flex-col sm:flex-row gap-2">
+          <input
+            id="ics-url"
+            type="text"
+            readonly
+            value="feed.ics"
+            class="flex-1 min-w-0 px-3 py-2 rounded-lg border border-gray-300 bg-gray-50 font-mono text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            onclick="this.select()"
+          />
+          <button
+            id="copy-btn"
+            type="button"
+            class="px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition"
+          >
+            Kopioi
+          </button>
+        </div>
+      </section>
+
+      <section class="mt-6 bg-white rounded-2xl shadow p-6 sm:p-8">
+        <h2 class="text-lg font-semibold text-gray-900">🔗 Lähde</h2>
+        <p class="mt-2 text-gray-600">
+          <a
+            href="https://sastamalanseurakunta.fi/wp-json/custom/v1/events?per_page=100"
+            class="text-indigo-600 hover:text-indigo-800 hover:underline font-medium"
+            >Alkuperäinen JSON-data</a
+          >
+          – Sastamalan seurakunnan kaikki tapahtumat, joista ICS-syötteeseen poimitaan Mouhijärven jumalanpalvelukset.
+        </p>
+      </section>
+
+      <footer class="mt-10 text-center text-sm text-gray-500">
+        <a href="https://github.com/jukkapajarinen/MouhijarvenKirkkoICS" class="hover:text-gray-700 hover:underline">GitHub</a>
+        ·
+        <a href="https://www.jukkapajarinen.com" class="hover:text-gray-700 hover:underline">Jukka Pajarinen</a>
+      </footer>
+    </main>
+
+    <script>
+      const input = document.getElementById('ics-url');
+      const button = document.getElementById('copy-btn');
+      input.value = new URL('feed.ics', location.href).href;
+      button.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(input.value);
+        } catch {
+          input.select();
+          document.execCommand('copy');
+        }
+        button.textContent = 'Kopioitu ✓';
+        setTimeout(() => (button.textContent = 'Kopioi'), 2000);
+      });
+    </script>
   </body>
 </html>
