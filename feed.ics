@@ -7,22 +7,10 @@ X-WR-CALNAME:Mouhijärven kirkko
 X-WR-TIMEZONE:Europe/Helsinki
 X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
-UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
- ydmVuLW1lc3N1Lw@mouhijarvenkirkkoics
-SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
-DTSTART:20261115T110000Z
-DTEND:20261115T110000Z
-DESCRIPTION:Mouhijärven messu\n\nURL: https://sastamalanseurakunta.fi/tapa
- htumahaku/mouhijarven-messu/\n\n⚠️ HUOM! Tämä on koneluettu tapahtum
- a. Tarkista vielä tiedot virallisesta linkistä! ⚠️
-URL:https://sastamalanseurakunta.fi/tapahtumahaku/mouhijarven-messu/
-END:VEVENT
-BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2hpbGphaXN
  1dWRlbi1yZXRyaWl0dGkv@mouhijarvenkirkkoics
 SUMMARY:✝️ Hiljaisuuden retriitti
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20261121T220000Z
 DTEND:20261122T140000Z
 DESCRIPTION:Hiljaisuuden retriitti 20.-22.11. Ohjaajina Laura-Kati ja Jouni
@@ -36,19 +24,20 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
  ydmVuLW1lc3N1LTIv@mouhijarvenkirkkoics
 SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20261129T110000Z
 DTEND:20261129T110000Z
-DESCRIPTION:Mouhijärven messu\n\nURL: https://sastamalanseurakunta.fi/tapa
- htumahaku/mouhijarven-messu-2/\n\n⚠️ HUOM! Tämä on koneluettu tapaht
- uma. Tarkista vielä tiedot virallisesta linkistä! ⚠️
+DESCRIPTION:Ensimmäisen adventtisunnuntain messu Mouhijärven kirkossa. Ka
+ inulainen\, Wallin.\n\nURL: https://sastamalanseurakunta.fi/tapahtumahaku/
+ mouhijarven-messu-2/\n\n⚠️ HUOM! Tämä on koneluettu tapahtuma. Tarki
+ sta vielä tiedot virallisesta linkistä! ⚠️
 URL:https://sastamalanseurakunta.fi/tapahtumahaku/mouhijarven-messu-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2l0c2VuYWl
  zeXlzcGFpdmFuLWp1bWFsYW5wYWx2ZWx1cy8@mouhijarvenkirkkoics
 SUMMARY:✝️ Itsenäisyyspäivän jumalanpalvelus
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20261206T080000Z
 DTEND:20261206T080000Z
 DESCRIPTION:Itsenäisyyspäivän sanajumalanpalvelus kirkossa ja seppeleide
@@ -63,19 +52,22 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2pvdWx1bi1
  zYW5vamEtamEtc2F2ZWxpYS8@mouhijarvenkirkkoics
 SUMMARY:✝️ Joulun Sanoja ja Säveliä
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20261217T160000Z
 DTEND:20261217T160000Z
-DESCRIPTION:Joulun Sanoja ja Säveliä\n\nURL: https://sastamalanseurakunta
- .fi/tapahtumahaku/joulun-sanoja-ja-savelia/\n\n⚠️ HUOM! Tämä on kone
- luettu tapahtuma. Tarkista vielä tiedot virallisesta linkistä! ⚠️
+DESCRIPTION:To 17.12. klo 18 Joulun Sanoja ja Säveliä Mouhijärven kirkos
+ sa.  Joulun sanomaa ja yhteislauluna englantilaisia kauneimpia joululauluj
+ a suomeksi\, Kainulainen\, Wallin\, Mouhijärven kirkkokuoro\n\nURL: https
+ ://sastamalanseurakunta.fi/tapahtumahaku/joulun-sanoja-ja-savelia/\n\n⚠
+ ️ HUOM! Tämä on koneluettu tapahtuma. Tarkista vielä tiedot virallise
+ sta linkistä! ⚠️
 URL:https://sastamalanseurakunta.fi/tapahtumahaku/joulun-sanoja-ja-savelia/
 END:VEVENT
 BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2pvdWx1YWF
  0b24taGFydGF1cy0zLw@mouhijarvenkirkkoics
 SUMMARY:✝️ Jouluaaton hartaus
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20261224T120000Z
 DTEND:20261224T120000Z
 DESCRIPTION:Jouluaaton hartaus\n\nURL: https://sastamalanseurakunta.fi/tapa
@@ -87,7 +79,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2pvdWx1YWF
  0b24taGFydGF1cy12YW5oYW4ta2lya29uLWthcHBlbGkv@mouhijarvenkirkkoics
 SUMMARY:✝️ Jouluaaton hartaus \, Vanhan kirkon kappeli
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20261224T130000Z
 DTEND:20261224T130000Z
 DESCRIPTION:Jouluaaton hartaus\n\nURL: https://sastamalanseurakunta.fi/tapa
@@ -101,7 +93,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2pvdWx1a2l
  ya2tvLTIv@mouhijarvenkirkkoics
 SUMMARY:✝️ Joulukirkko
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20261225T080000Z
 DTEND:20261225T080000Z
 DESCRIPTION:Jouluaamun messu. Mouhijärven kirkkokuoro. Kainulainen\, Walli
@@ -114,7 +106,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
  ydmVuLW1lc3N1LTMv@mouhijarvenkirkkoics
 SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270117T110000Z
 DTEND:20270117T110000Z
 DESCRIPTION:Mouhijärven messu\n\nURL: https://sastamalanseurakunta.fi/tapa
@@ -126,7 +118,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
  ydmVuLW1lc3N1LTQv@mouhijarvenkirkkoics
 SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270131T080000Z
 DTEND:20270131T080000Z
 DESCRIPTION:Mouhijärven messu\n\nURL: https://sastamalanseurakunta.fi/tapa
@@ -138,7 +130,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L3R1aGtha2V
  za2l2aWlrb24tbWVzc3Uv@mouhijarvenkirkkoics
 SUMMARY:✝️ Tuhkakeskiviikon messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270210T160000Z
 DTEND:20270210T170000Z
 DESCRIPTION:Tuhkakeskiviikon messu. Kirkon perinteinen messu pääsiäispaa
@@ -153,7 +145,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
  ydmVuLW1lc3N1LTUv@mouhijarvenkirkkoics
 SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270228T110000Z
 DTEND:20270228T120000Z
 DESCRIPTION:Mouhijärven messu\n\nURL: https://sastamalanseurakunta.fi/tapa
@@ -165,7 +157,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21hcmlhbnB
  haXZhbi1tZXNzdS0yLw@mouhijarvenkirkkoics
 SUMMARY:✝️ Marianpäivän messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270314T110000Z
 DTEND:20270314T110000Z
 DESCRIPTION:Marianpäivän messu\n\nURL: https://sastamalanseurakunta.fi/ta
@@ -177,7 +169,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2hpbGphaXN
  1dWRlbi1wYWl2YS8@mouhijarvenkirkkoics
 SUMMARY:✝️ Hiljaisuuden päivä
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270320T070000Z
 DTEND:20270320T070000Z
 DESCRIPTION:Hiljaisuuden päivä. Maritta LAiho\, KAisa Mäkelä-Tulander. 
@@ -190,7 +182,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2tpaXJhc3R
  vcnN0YWluLW1lc3N1Lw@mouhijarvenkirkkoics
 SUMMARY:✝️ Kiirastorstain messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270325T160000Z
 DTEND:20270325T160000Z
 DESCRIPTION:Kiirastorstain messu\n\nURL: https://sastamalanseurakunta.fi/ta
@@ -202,7 +194,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L3Jpc3Rpbmp
  1aGxhLXRlcnZhbWFlbi1ydWtvdXNodW9uZWVsbGEv@mouhijarvenkirkkoics
 SUMMARY:✝️ Ristinjuhla Tervamäen rukoushuoneella
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270326T110000Z
 DTEND:20270326T110000Z
 DESCRIPTION:Ristinjuhla Tervamäen rukoushuoneella\, osoite: Tervamäen rai
@@ -216,7 +208,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L3BhYXNpYWl
  zZW4tbWVzc3Uv@mouhijarvenkirkkoics
 SUMMARY:✝️ Pääsiäisen messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270328T070000Z
 DTEND:20270328T070000Z
 DESCRIPTION:Pääsiäisen messu\n\nURL: https://sastamalanseurakunta.fi/tap
@@ -228,7 +220,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
  ydmVuLW1lc3N1LTYv@mouhijarvenkirkkoics
 SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270425T070000Z
 DTEND:20270425T070000Z
 DESCRIPTION:Mouhijärven messu\n\nURL: https://sastamalanseurakunta.fi/tapa
@@ -240,7 +232,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
  ydmVuLW1lc3N1LTcv@mouhijarvenkirkkoics
 SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270509T070000Z
 DTEND:20270509T070000Z
 DESCRIPTION:Mouhijärven messu\n\nURL: https://sastamalanseurakunta.fi/tapa
@@ -252,7 +244,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2thYXR1bmV
  pdHRlbi1tdWlzdG9wYWl2YW4ta2VudHRhaGFydGF1cy8@mouhijarvenkirkkoics
 SUMMARY:✝️ Kaatuneitten muistopäivän kenttähartaus
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270516T100000Z
 DTEND:20270516T100000Z
 DESCRIPTION:Kaatuneitten muistopäivän hartaus\n\nURL: https://sastamalans
@@ -263,10 +255,22 @@ URL:https://sastamalanseurakunta.fi/tapahtumahaku/kaatuneitten-muistopaivan
  -kenttahartaus/
 END:VEVENT
 BEGIN:VEVENT
+UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdG9yaXN
+ 0aWtpcmtrby8@mouhijarvenkirkkoics
+SUMMARY:✝️ Motoristikirkko
+DTSTAMP:20261116T043859Z
+DTSTART:20270519T160000Z
+DTEND:20270519T160000Z
+DESCRIPTION:Motoristikirkko\n\nURL: https://sastamalanseurakunta.fi/tapahtu
+ mahaku/motoristikirkko/\n\n⚠️ HUOM! Tämä on koneluettu tapahtuma. Ta
+ rkista vielä tiedot virallisesta linkistä! ⚠️
+URL:https://sastamalanseurakunta.fi/tapahtumahaku/motoristikirkko/
+END:VEVENT
+BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
  ydmVuLW1lc3N1LTkv@mouhijarvenkirkkoics
 SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270613T100000Z
 DTEND:20270613T100000Z
 DESCRIPTION:Mouhijärven messu\n\nURL: https://sastamalanseurakunta.fi/tapa
@@ -278,7 +282,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2tvbmZpcm1
  hYXRpb21lc3N1Lw@mouhijarvenkirkkoics
 SUMMARY:✝️ Konfirmaatiomessu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270620T070000Z
 DTEND:20270620T090000Z
 DESCRIPTION:URL: https://sastamalanseurakunta.fi/tapahtumahaku/konfirmaatio
@@ -290,7 +294,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L2p1aGFubnV
  zcGFpdmFuLWhhcnRhdXNoZXRraS8@mouhijarvenkirkkoics
 SUMMARY:✝️ Juhannuspäivän hartaushetki
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270626T150000Z
 DTEND:20270626T150000Z
 DESCRIPTION:Juhannuspäivän hartaushetki\n\nURL: https://sastamalanseuraku
@@ -304,7 +308,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
  ydmVuLW1lc3N1LTEwLw@mouhijarvenkirkkoics
 SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270704T070000Z
 DTEND:20270704T070000Z
 DESCRIPTION:Mouhijärven messu\n\nURL: https://sastamalanseurakunta.fi/tapa
@@ -316,7 +320,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21lc3N1LXZ
  pbHB1bi1sYWF2dWxsYS8@mouhijarvenkirkkoics
 SUMMARY:✝️ Messu Vilpun laavulla
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270808T100000Z
 DTEND:20270808T100000Z
 DESCRIPTION:Messu Vilpun laavulla\n\nURL: https://sastamalanseurakunta.fi/t
@@ -328,7 +332,7 @@ BEGIN:VEVENT
 UID:aHR0cHM6Ly9zYXN0YW1hbGFuc2V1cmFrdW50YS5maS90YXBhaHR1bWFoYWt1L21vdWhpamF
  ydmVuLW1lc3N1LTExLw@mouhijarvenkirkkoics
 SUMMARY:✝️ Mouhijärven messu
-DTSTAMP:20261115T044156Z
+DTSTAMP:20261116T043859Z
 DTSTART:20270829T070000Z
 DTEND:20270829T070000Z
 DESCRIPTION:Messu Vilpun laavulla\n\nURL: https://sastamalanseurakunta.fi/t
